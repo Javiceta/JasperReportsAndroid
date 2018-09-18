@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="facturaSimplificada" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="df0be92f-556d-4814-b0b6-a90dd025564d">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="95" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="80" splitType="Stretch">
+			<staticText>
+				<reportElement key="facturaSimplificada" x="0" y="0" width="100" height="20" uuid="17731a21-c318-4252-b668-af12e48e715a"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Factura simplificada]]></text>
+			</staticText>
+			<textField>
+				<reportElement key="numFactura" x="110" y="0" width="100" height="20" uuid="65805820-c8b7-44eb-99c3-feac6f740c4f"/>
+				<textElement textAlignment="Left" verticalAlignment="Top"/>
+				<textFieldExpression><![CDATA["1/714"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="20" width="100" height="20" uuid="f6b61c95-3656-49b0-9803-9b0859b0a169"/>
+				<textElement textAlignment="Left" verticalAlignment="Top"/>
+				<text><![CDATA[Mesa]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="110" y="20" width="100" height="20" uuid="a156837d-2622-42ef-80ec-fa33bd7915f3"/>
+				<textFieldExpression><![CDATA["10.0"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="40" width="100" height="20" uuid="0503d226-0806-4c8d-9beb-30dda0f8a845"/>
+				<text><![CDATA[Fecha y Hora:]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyy - hh:mm:ss">
+				<reportElement x="110" y="40" width="100" height="20" uuid="56212fea-4025-4255-b8e6-fe71e7e4bd1b"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="60" width="100" height="20" uuid="3aee69f5-4af6-4594-a2ea-2022203f20c4"/>
+				<text><![CDATA[Le atendió:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="110" y="60" width="100" height="20" uuid="07341378-130c-41ae-99b9-447f58d8a96c"/>
+				<textFieldExpression><![CDATA["Administrador"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="10" width="40" height="20" uuid="7a61da4a-e8a5-4f61-8e5a-9bce8a9e6ff4"/>
+				<text><![CDATA[Uds]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="10" width="80" height="20" uuid="9683db3f-2b36-4586-b20b-ff54e30aac95"/>
+				<text><![CDATA[Descripción]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="10" width="60" height="20" uuid="9935816f-adac-4566-a755-575e34c1195b"/>
+				<text><![CDATA[PVP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="10" width="60" height="20" uuid="05bd7427-f72c-43c9-8cc1-b62a44d93be1"/>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="40" height="20" uuid="97cc9fb4-1020-4b28-84ce-106fb7657a07"/>
+				<textFieldExpression><![CDATA["1"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="0" width="100" height="20" uuid="a393b7de-9998-4e32-b5e8-46b64e3a1873"/>
+				<textFieldExpression><![CDATA["TAPA ALMOGROTE"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="0" width="40" height="20" uuid="27f882e5-0441-48f3-a782-8dd19a0326ae"/>
+				<textFieldExpression><![CDATA["2.50"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="0" width="60" height="20" uuid="d066f83d-b9e2-4d04-bee9-bb151af3b4b4"/>
+				<textFieldExpression><![CDATA["2.50"]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="57" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="60" height="20" uuid="e6649ebf-e173-4790-aab4-1dfd1fa61a9d"/>
+				<text><![CDATA[Artículos:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="60" y="0" width="70" height="20" uuid="fe0d1ae5-0929-4cb4-8a87-4bb7cee5c272"/>
+				<textFieldExpression><![CDATA["18"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="227" y="0" width="63" height="20" uuid="a55869ef-fc86-4db7-a80a-4d6a83b7f094"/>
+				<text><![CDATA[Total eur:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="290" y="0" width="70" height="20" uuid="0fc31a51-67a0-4759-ba48-d2ae6b90b9bd"/>
+				<textFieldExpression><![CDATA["72.20"]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="c2d5485b-49e1-4c6a-aae8-efb2f8e205a4"/>
+				<text><![CDATA[Impuestos incluidos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="20" width="50" height="20" uuid="19a27f91-11c5-4620-a0ea-533e63256cf6"/>
+				<text><![CDATA[Tipo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="20" width="80" height="20" uuid="e14eaead-f7f9-4b1b-8c7e-a90f7d76ef11"/>
+				<text><![CDATA[Base]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="20" width="80" height="20" uuid="8efeecc3-0683-414a-ba87-96780db8d3a7"/>
+				<text><![CDATA[Total Imp.]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="107" splitType="Stretch">
+			<staticText>
+				<reportElement x="130" y="0" width="120" height="20" uuid="3d9f5a57-4e20-47c9-93f1-0e24b0db0401"/>
+				<text><![CDATA[*** FORMA DE PAGO ***]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="30" width="80" height="20" uuid="8614bec3-cbfb-489c-b56f-c65634fa9427"/>
+				<textFieldExpression><![CDATA["/Efectivo"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="30" width="70" height="20" uuid="0732e881-3938-499c-bf9b-08a1d4195c66"/>
+				<textFieldExpression><![CDATA["72.20"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="120" y="50" width="130" height="20" uuid="dda278c4-fdea-4e08-b6e2-192efa384ff7"/>
+				<text><![CDATA[Gracias por su visita]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>
